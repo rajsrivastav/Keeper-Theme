@@ -1,0 +1,204 @@
+/*
+Theme Name: keepertheme
+Theme URI: https://wordpress.com/
+Author: Parveen Kumar 
+Author URI: https://keeper.com/
+Description: A basic custom WordPress theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: my-custom-theme
+*/
+
+:root {
+    --primary-color: #543C32;
+    --secondary-color: #FFFFFF;
+}
+@media screen and (min-width: 1800px) {
+    .container {
+        max-width: 1720px !important;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'CabinetGrotesk-Medium';
+    font-weight: 500;
+}
+a, p {
+    font-family: 'CabinetGrotesk-Regular';
+    font-size: 18px;
+}
+/* Custom circle  */
+a.custom-circle {
+    width: 240px;
+    height: 240px;
+    background: #AEB946;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.custom-circle:hover svg{
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Banner css */
+.banner {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 125px 0px;
+}
+.banner-heading {
+    font-size: 200px;
+    font-weight: 700;
+}
+.banner-btn {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: x-large;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+span.btn-mouse {
+    width: 35px;
+    height: 45px;
+    display: inline-flex;
+    border: 2px solid;
+    border-radius: 40%;
+    position: relative;
+    justify-content: center;
+}
+
+.banner-row-2.row {
+    padding-top: 115px;
+}
+span.btn-mouse-line {
+    overflow: hidden;
+    position: relative;
+    width: 3px;
+    height: 20px;
+}
+span.btn-mouse-line::before {
+    height: 15px;
+    content: "";
+    background-color: white;
+    animation: mouse-line 1.5s ease infinite;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+@keyframes mouse-line {
+    0%{
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(calc(100% + .75rem));
+    }
+}
+
+/* Header Css */
+.header-menus ul {
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+    margin: 0;
+}
+.header-menus ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    position: relative;
+}
+.header-row {
+    border: none;
+    border-bottom: 1px solid #937A70;
+    color: var(--secondary-color);
+}
+.header-menus ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: width 0.3s ease-in-out;
+    bottom: -2px;
+    background-color: var(--secondary-color);
+}
+.header-menus ul li a:hover::after {
+    width: 100%; 
+}
+
+/* Swiper css */
+.footer-swiper {
+    width: 35%;
+    height: 170px;
+    display: inline-flex;
+}
+.banner-swiper {
+    width: 65%;
+    height: 250px;
+}
+/* Footer Css */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px 0;
+    margin-top: 60px;
+}
+.footer-heading {
+    font-size: 160px;
+    line-height: 160px;
+}
+.footer-row-1.row {
+    padding: 100px 0px;
+}
+.footer-menus ul {
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+    margin: 0;
+}
+.footer-menus ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    position: relative;
+}
+.footer-row-2 {
+    border-top: 1px solid;
+}
+.footer-menus ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: width 0.3s ease-in-out;
+    bottom: -2px;
+    background-color: var(--secondary-color);
+}
+.footer-menus ul li a:hover::after {
+    width: 100%; 
+}
+
+.footer-row-3 {
+    color: #AD9C94;
+    display: flex;
+}
+.footer-page {
+    margin: 0 auto 0 4rem;
+}
+.footer-row-3 a {
+    color: #AD9C94;
+}
+.footer-row-3 a:hover {
+    color: var(--secondary-color);
+}
+.social-links {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+}
