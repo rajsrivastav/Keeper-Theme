@@ -257,6 +257,12 @@ span.btn-mouse-line::before {
     font-size: 96px;
     line-height: 120px;
 }
+
+/* Our projects css */
+.col-padding {
+    padding-left: 150px;
+}
+
 /* Footer Css */
 footer {
     background-color: var(--primary-color);

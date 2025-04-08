@@ -87,7 +87,7 @@ get_header();
                 <p class="sections-content">We do more than just build websites and Facebook pages and buy advertising space; we are a communication agency. We introduce your name, item, or service to the consumer. To help your business succeed, we work in branding, digital marketing, art direction, and printing.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row py-5 my-5">
             <div class="col-3">
                 <h3 class="ratting">10+</h3>
                 <p class="sections-content">Years of Experience</p>
@@ -106,6 +106,21 @@ get_header();
             </div>
         </div>
     </div>
+</section>
+<section class="our-projects section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+            <label for="our-projects" class="custom-label">OUR PROJECTS</label>
+            </div>
+            <div class="col-9 col-padding">
+                <h2 class="sections-heading">
+                    Take a look at our most <br> successful projects
+                </h2>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 <?php 
