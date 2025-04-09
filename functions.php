@@ -43,3 +43,4 @@ add_action( 'wp_enqueue_scripts', 'theme_gsap_script' );
 //Swiper scripts
 wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
 wp_enqueue_script('swiper-script', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array('jquery'), null, true);
+

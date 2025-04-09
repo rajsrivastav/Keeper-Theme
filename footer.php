@@ -23,7 +23,7 @@
         <div class="footer-row-2 row py-5">
             <div class="col-6 p-0">
                 <div class="footer-menus">
-                <?php
+                    <?php
                         wp_nav_menu(array(
                             'theme_location' => 'footer_menu',
                             'container' => true,
